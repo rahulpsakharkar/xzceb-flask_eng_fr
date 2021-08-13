@@ -36,6 +36,5 @@ def french_to_english(french_text):
                   model_id ='fr-en').get_result()
 
     # Extract actual tranalated text
-    #english_text = translation['translations'][0]['translation']
     english_text = translation.get('translations')[0].get('translation')
     return english_text
